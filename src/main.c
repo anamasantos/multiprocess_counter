@@ -101,7 +101,7 @@ int main() {
 		}
 		else{
 			//se o numero de processos aberto já é 4, então ele aguarda ate um processo terminar
-			waitpid(0, NULL, 0);
+			waitpid(-1, NULL, 0);
 			num_processos--;//decrementa o numero de processos
 		}
 	}
